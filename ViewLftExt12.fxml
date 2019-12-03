@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Crl_LftExt12">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="100.0" />
+      
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="600.0" prefWidth="200.0" spacing="25.0">
+               <children>
+                  <TextField fx:id="input1" text="Enter Meme Text" />
+                  <Button mnemonicParsing="false" onAction="#PressButton1" prefHeight="40.0" prefWidth="75.0" text="Preview" />
+                  <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="60.0" text="Save" />
+               </children>
+               <padding>
+                  <Insets top="100.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+      
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="600.0" prefWidth="200.0" spacing="25.0">
+               <children>
+                  
+               </children>
+               <padding>
+                  <Insets top="100.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+      
+      <StackPane prefHeight="600.0" prefWidth="700.0">
+         <children>
+            <ImageView fitHeight="413.0" fitWidth="484.0">
+               <image>
+                  <Image url="@Left-Exit-12-Off-Ramp.jpg" />
+               </image>
+            </ImageView>
+            
+            <Label fx:id="view1" prefHeight="102.0" prefWidth="100.0" text="Java" textFill="GHOSTWHITE" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+               <StackPane.margin>
+                  <Insets left="105.0" top="-260.0" />
+               </StackPane.margin>
+               <font>
+                  <Font size="20.0"/>
+               </font>
+            </Label>
+            
+         </children>
+      </StackPane>
+   </children>
+</HBox>

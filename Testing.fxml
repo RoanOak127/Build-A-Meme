@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Ctrl_Testing">
+   <children>
+      <VBox alignment="CENTER" prefHeight="600.0" prefWidth="400.0" spacing="75.0">
+         <children>
+            <ImageView fx:id="mainImage" fitHeight="259.0" fitWidth="291.0" pickOnBounds="true" preserveRatio="true" />
+            <Button mnemonicParsing="false" onAction="#pressPickMe" prefHeight="40.0" prefWidth="75.0" text="Pick Me!" />
+         </children></VBox>
+      <StackPane prefHeight="600.0" prefWidth="600.0">
+         <children>
+            <ScrollPane prefHeight="600.0" prefWidth="600.0">
+               <content>
+                  <VBox prefHeight="550.0" prefWidth="550.0">
+                     <children>
+                        <HBox prefHeight="300.0" prefWidth="500.0" />
+                        <GridPane alignment="CENTER" gridLinesVisible="true">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="200.0" prefHeight="30.0" />
+                            <RowConstraints minHeight="200.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="200.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="200.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <ImageView fx:id="Archer" fitHeight="190.0" fitWidth="185.0" onMouseClicked="#mouseClick" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <ImageView fx:id="aliens" fitHeight="189.0" fitWidth="184.0" onMouseClicked="#mouseClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <ImageView fx:id="baby" fitHeight="192.0" fitWidth="184.0" onMouseClicked="#mouseClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <ImageView fx:id="chMind" fitHeight="201.0" fitWidth="184.0" onMouseClicked="#mouseClick" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <ImageView fx:id="Doge" fitHeight="194.0" fitWidth="185.0" onMouseClicked="#mouseClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <ImageView fx:id="ExpMind" fitHeight="196.0" fitWidth="178.0" onMouseClicked="#mouseClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <ImageView fx:id="AgrSea" fitHeight="190.0" fitWidth="185.0" onMouseClicked="#mouseClick" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2" />
+                              <ImageView fx:id="HotBling" fitHeight="190.0" fitWidth="185.0" onMouseClicked="#mouseClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <ImageView fx:id="KillHann" fitHeight="190.0" fitWidth="185.0" onMouseClicked="#mouseClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                              <ImageView fx:id="LfEx12" fitHeight="190.0" fitWidth="185.0" onMouseClicked="#mouseClick" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3" />
+                              <ImageView fx:id="Archer5" fitHeight="190.0" fitWidth="185.0" onMouseClicked="#mouseClick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </StackPane>
+   </children>
+</HBox>
