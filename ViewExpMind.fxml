@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Ctr_ExpMind">
+   <children>
+      <HBox prefHeight="600.0" prefWidth="100.0" />
+      <VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="200.0">
+         <children>
+            <VBox prefHeight="314.0" prefWidth="200.0" spacing="50.0">
+               <children>
+                  <TextField fx:id="topText" />
+                  <TextField fx:id="middleText1" />
+                  <TextField fx:id="middleText2" />
+                  <TextField fx:id="bottomText" />
+               </children>
+               <padding>
+                  <Insets top="30.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+               <children>
+                  <Button fx:id="preview" mnemonicParsing="false" onAction="#PressPreview" prefHeight="40.0" prefWidth="75.0" text="Preview" />
+                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="60.0" text="Save" />
+                  <Button mnemonicParsing="false" onAction="#goBack" text="Return" />
+               </children>
+            </VBox>
+         </children>
+         <HBox.margin>
+            <Insets top="50.0" />
+         </HBox.margin>
+      </VBox>
+      <StackPane prefHeight="600.0" prefWidth="700.0">
+         <children>
+            <ImageView fitHeight="563.0" fitWidth="400.0">
+               <image>
+                  <Image url="@Roan_Expanding-Brain.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="topDisp" prefHeight="131.0" prefWidth="189.0" text="Label" textOverrun="CLIP" wrapText="true">
+               <StackPane.margin>
+                  <Insets right="203.0" top="-425.0" />
+               </StackPane.margin>
+            </Label>
+            <Label fx:id="middleDisp1" prefHeight="131.0" prefWidth="189.0" text="Label" textOverrun="CLIP" wrapText="true">
+               <StackPane.margin>
+                  <Insets right="203.0" top="-140.0" />
+               </StackPane.margin>
+            </Label>
+            <Label fx:id="middleDisp2" prefHeight="112.0" prefWidth="189.0" text="Label" textOverrun="CLIP" wrapText="true">
+               <StackPane.margin>
+                  <Insets right="203.0" top="140.0" />
+               </StackPane.margin>
+            </Label>
+            <Label fx:id="bottomDisp" prefHeight="136.0" prefWidth="189.0" text="Label" textOverrun="CLIP" wrapText="true">
+               <StackPane.margin>
+                  <Insets right="203.0" top="425.0" />
+               </StackPane.margin>
+            </Label>
+         </children>
+      </StackPane>
+   </children>
+</HBox>

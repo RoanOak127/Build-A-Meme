@@ -19,11 +19,7 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			//Parent root = FXMLLoader.load(getClass().getResource("/application/ViewChMnd.fxml"));
-			//Parent root = FXMLLoader.load(getClass().getResource("/application/ViewDoge.fxml"));
-			//Parent root = FXMLLoader.load(getClass().getResource("/application/ViewExpMind.fxml"));
-			//Parent root = FXMLLoader.load(getClass().getResource("/application/Sample.fxml"));
-			Parent root = FXMLLoader.load(getClass().getResource("/application/Testing.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("/application/ViewMemeChooser.fxml"));
 			Scene scene = new Scene(root,1000,600);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);

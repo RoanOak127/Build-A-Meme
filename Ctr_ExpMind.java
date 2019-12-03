@@ -1,6 +1,5 @@
 package application;
 
-
 import java.io.IOException;
 
 import javafx.event.ActionEvent;
@@ -9,33 +8,47 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 /*
- * Known Issues: none?
+ * 
+ * TODO: change font type, size to memefy it
  */
-public class Crl_HotBlng {
+
+public class Ctr_ExpMind {
+
+	//Textfields and Labels correspond to the presets
+	
+	//user/preset input
 	@FXML
-	public TextField input1; //what's to be put in the top text area
-	public TextField input2; //what's to be put in the bottom text area
-	public Label view1; //displays what's in the top textfield
-	public Label view2; //displays what's in the bottom textfield
+	public Button preview;
+	public TextField topText;
+	public TextField middleText1;
+	public TextField middleText2;
+	public TextField bottomText;
+	
+	//user/preset output onto the image
+	@FXML
+	public Label topDisp;
+	public Label middleDisp1;
+	public Label middleDisp2;
+	public Label bottomDisp;
+	
 	
 	/*
-	 * set's the top display text to whatever's in the input textfield
+	 * When the preview button is pushed
+	 * takes all the text currently in the textfields
+	 * and changes the text on the picture to match
 	 */
 	@FXML
-	public void PressButton1(ActionEvent e){
-		view1.setText(input1.getText());
-	}
-	/*
-	 * set's the bottom display text to whatever's in the input textfield
-	 */
-	@FXML
-	public void PressButton2(ActionEvent e){
-		view2.setText(input2.getText());
+	public void PressPreview(ActionEvent e){
+		topDisp.setText(topText.getText());
+		middleDisp1.setText(middleText1.getText());
+		middleDisp2.setText(middleText2.getText());
+		bottomDisp.setText(bottomText.getText());
 	}
 	
 	@FXML
@@ -56,5 +69,4 @@ public class Crl_HotBlng {
 			e.printStackTrace();
 		}
 	}
-
 }

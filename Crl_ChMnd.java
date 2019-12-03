@@ -1,6 +1,5 @@
 package application;
 
-
 import java.io.IOException;
 
 import javafx.event.ActionEvent;
@@ -9,28 +8,28 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 /*
  * Known Issues: none?
+ * TODO: change font to be better, probably add a copyright for the bee movie script
  */
-public class Crl_LftExt12 {
+public class Crl_ChMnd {
 	@FXML
-	public TextField input1; //what's to be put in the text area
-	public Label view1; //displays what's in the textfield
-
+	public TextField input; //what's to be put in the text area
+	public Label view; //displays what's in the textfield
+	
 	/*
 	 * set's the display text to whatever's in the input textfield
 	 */
 	@FXML
-	public void PressButton1(ActionEvent e){
-		view1.setText(input1.getText());
-		view1.setTextFill(Color.GHOSTWHITE);
+	public void PressButton(ActionEvent e){
+		view.setText(input.getText());
 	}
-	
+
 	@FXML
 	public void goBack (ActionEvent event)
 	{
@@ -49,5 +48,4 @@ public class Crl_LftExt12 {
 			e.printStackTrace();
 		}
 	}
-
 }

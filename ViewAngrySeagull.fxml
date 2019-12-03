@@ -22,6 +22,7 @@
                   <TextField fx:id="input4" text="Enter 4th row Meme Text" />
                   <Button mnemonicParsing="false" onAction="#PressButton1" prefHeight="40.0" prefWidth="75.0" text="Preview" />
                   <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="60.0" text="Save" />
+                  <Button mnemonicParsing="false" onAction="#goBack" text="Return" />
                </children>
                <padding>
                   <Insets top="100.0" />
@@ -51,7 +52,7 @@
                </image>
             </ImageView>
             
-            <Label fx:id="view1" prefHeight="102.0" prefWidth="100.0" text="Java" textFill="GHOSTWHITE" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+            <Label fx:id="view1" prefHeight="102.0" prefWidth="100.0" text="Java" textAlignment="CENTER" textFill="GHOSTWHITE" textOverrun="CLIP" wrapText="true">
                <StackPane.margin>
                   <Insets left="320.0" top="-420.0" />
                </StackPane.margin>
@@ -60,7 +61,7 @@
                </font>
             </Label>
             
-            <Label fx:id="view2" prefHeight="102.0" prefWidth="150.0" text="Java" textFill="GHOSTWHITE" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+            <Label fx:id="view2" prefHeight="102.0" prefWidth="150.0" text="Java" textAlignment="CENTER" textFill="GHOSTWHITE" textOverrun="CLIP" wrapText="true">
                <StackPane.margin>
                   <Insets left="360.0" top="-120.0" />
                </StackPane.margin>
@@ -69,7 +70,7 @@
                </font>
             </Label>
             
-            <Label fx:id="view3" prefHeight="102.0" prefWidth="100.0" text="Java" textFill="GHOSTWHITE" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+            <Label fx:id="view3" prefHeight="102.0" prefWidth="100.0" text="Java" textAlignment="CENTER" textFill="GHOSTWHITE" textOverrun="CLIP" wrapText="true">
                <StackPane.margin>
                   <Insets left="320.0" top="220.0" />
                </StackPane.margin>
@@ -78,7 +79,7 @@
                </font>
             </Label>
             
-            <Label fx:id="view4" prefHeight="102.0" prefWidth="100.0" text="Java" textFill="GHOSTWHITE" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+            <Label fx:id="view4" prefHeight="102.0" prefWidth="100.0" text="Java" textAlignment="CENTER" textFill="GHOSTWHITE" textOverrun="CLIP" wrapText="true">
                <StackPane.margin>
                   <Insets left="320.0" top="520.0" />
                </StackPane.margin>

@@ -19,6 +19,7 @@
                   <TextField fx:id="input1" text="Enter Meme Text" />
                   <Button mnemonicParsing="false" onAction="#PressButton1" prefHeight="40.0" prefWidth="75.0" text="Preview" />
                   <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="60.0" text="Save" />
+                  <Button mnemonicParsing="false" onAction="#goBack" text="Return" />
                </children>
                <padding>
                   <Insets top="100.0" />
@@ -48,12 +49,12 @@
                </image>
             </ImageView>
             
-            <Label fx:id="view1" prefHeight="102.0" prefWidth="100.0" text="Java" textFill="GHOSTWHITE" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+            <Label fx:id="view1" prefHeight="102.0" prefWidth="100.0" text="Java" textAlignment="CENTER" textFill="GHOSTWHITE" textOverrun="CLIP" wrapText="true">
                <StackPane.margin>
                   <Insets left="105.0" top="-260.0" />
                </StackPane.margin>
                <font>
-                  <Font size="20.0"/>
+                  <Font size="20.0" />
                </font>
             </Label>
             
